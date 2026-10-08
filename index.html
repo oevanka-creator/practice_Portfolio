@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Evans Oppong
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.pinimg.com/1200x/60/85/6e/60856e469a30a8a75e2ad339a9b83f40.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Evans Oppong! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a cloud-focused DevOps engineer with 3 years of experience in continuous integration and 
+            automated deployment pipelines. I have designed robust infrastructure and containerized microservices 
+            hosted on AWS. I am a frequent user of AWS Management tools and have extensive hands-on experience with EC2, Lambda, and CloudWatch 
+            to optimize cloud performance.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>2.5 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>1 year experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>4 years experience</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Cloud Analytics Dashboard</h3>
+            <ul>
+              <li>Built a real-time data monitoring platform for a logistics client using React, Node.js, and AWS Lambda to track delivery fleet metrics.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>E-Commerce Inventory Microservice</h3>
+            <ul>
+              <li>Designed a scalable backend system for a retail brand using Python, Docker, and Kubernetes to automate stock synchronization across warehouses.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Smart Security Camera</h3>
+            <ul>
+              <li>Created an IoT surveillance application for a residential property firm using Raspberry Pi, OpenCV, and Python for real-time facial recognition and alerts</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Evans is a highly dependable engineer who prioritizes clean code. 
+          He grasps complex architecture swiftly and communicates solutions clearly, 
+          making him an excellent mentor for junior developers.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Evans brings sharp analytical thinking to software design and balances business logic perfectly. 
+          An exceptional collaborator, she takes complete ownership of difficult technical challenges 
+          and effortlessly unites cross-functional teams.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Evans is a remarkably versatile developer who thrives under tight product deadlines. 
+          His solution-oriented energy, open-mindedness to feedback, and strong initiative demonstrate 
+          immense potential for engineering leadership roles.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>   
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
